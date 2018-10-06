@@ -21,4 +21,8 @@
   :global-vars {*warn-on-reflection* true}
   :test-refresh {:quiet        true
                  :with-repl    true
-                 :changes-only true})
+                 :changes-only true}
+  :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
+                                    :username      :env/clojars_username
+                                    :password      :env/clojars_password
+                                    :sign-releases false}]])
