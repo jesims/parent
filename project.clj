@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "1.0.0"
+(defproject io.jesi/parent "1.0.0-SNAPSHOT"
   :min-lein-version "2.8.1"
   :managed-dependencies [[org.clojure/clojure "1.9.0"]
                          [org.clojure/clojurescript "1.10.339"]
