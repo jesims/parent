@@ -1,6 +1,6 @@
 {
   "name": "parent",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "dependencyManagement": {
     "karma": "^2.0.4",
     "karma-chrome-launcher": "^2.2.0",
