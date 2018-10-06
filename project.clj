@@ -1,4 +1,10 @@
 (defproject io.jesi/parent "1.0.0-SNAPSHOT"
+  :description "Clojure and NPM parent package definitions"
+  :url "https://github.com/jesims/parent#readme"
+  :license {:name         "Eclipse Public License - v 1.0"
+            :url          "http://www.eclipse.org/legal/epl-v10.html"
+            :distribution :repo
+            :comments     "same as Clojure"}
   :min-lein-version "2.8.1"
   :managed-dependencies [[org.clojure/clojure "1.9.0"]
                          [org.clojure/clojurescript "1.10.339"]
