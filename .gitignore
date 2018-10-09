@@ -1,8 +1,9 @@
 .*
-/target/
 /node_modules/
-/package.json
 /package-lock.json
+/package.json
+/pom.xml
+/target/
 !.git*
 !/.circleci/
 !/.npmignore
