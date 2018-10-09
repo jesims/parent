@@ -1,5 +1,4 @@
 version: 2
-
 default: &default
   docker:
   - image: jesiio/build-bus:latest
@@ -10,15 +9,11 @@ default: &default
   - restore_cache:
       keys:
       - source-{{ .Revision }}
-  - checkount
-
 jobs:
   deps:
     <<: *default
     steps:
-    - restore_cache:
-        keys:
-        - source-{{ .Revision }}
+    - checkount
     - save_cache:
         key: source-{{ .Revision }}
         paths:
@@ -41,7 +36,6 @@ jobs:
     - run:
         name: Publish npm package
         command: dry publish
-
 workflows:
   version: 2
   main:
