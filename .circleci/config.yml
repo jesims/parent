@@ -1,0 +1,38 @@
+#TODO use clojure config
+version: 2
+default: &default
+  docker:
+  - image: jesiio/build-bus:latest
+    environment:
+      JVM_OPTS: -Xmx3200m
+      DEBUG: 1
+jobs:
+  deploy:
+    <<: *default
+    steps:
+    - checkout
+    - run: lein deploy clojars
+  publish:
+    <<: *default
+    steps:
+    - checkout
+    - run:
+        name: Authenticate with registry
+        command: echo "//registry.npmjs.org/:_authToken=$npm_TOKEN" > ~/repo/.npmrc
+    - run:
+        name: Publish npm package
+        command: dry publish --access public
+workflows:
+  version: 2
+  main:
+    jobs:
+    - deploy:
+        context: JESI
+        filters:
+          branches:
+            only: master
+    - publish:
+        context: JESI
+        filters:
+          branches:
+            only: master
