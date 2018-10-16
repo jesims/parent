@@ -1,5 +1,11 @@
-# parent
+# Parent
 Clojure and NPM parent package definitions
+
+## Latest Version
+
+[![Clojars Project](https://img.shields.io/clojars/v/io.jesi/parent.svg)](https://clojars.org/io.jesi/parent)
+[![NPM Version](https://img.shields.io/npm/v/@io.jesi/parent.svg)](https://img.shields.io/npm/v/@io.jesi/parent.svg)
+[![CircleCI](https://circleci.com/gh/jesims/parent.svg?style=svg)](https://circleci.com/gh/jesims/parent)
 
 ## In Clojure
 ```clojure
