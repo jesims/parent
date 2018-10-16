@@ -10,7 +10,7 @@ Clojure and NPM parent package definitions
 ## In Clojure
 ```clojure
   :plugins [[lein-parent "0.3.5"]]
-  :parent-project {:coords [io.jesi/parent "0.0.1"]
+  :parent-project {:coords [io.jesi/parent "X.Y.Z"]
                    :inherit [:plugins :repositories :managed-dependencies :dependencies :exclusions [:profiles :dev] :test-refresh]}
 ```
 
@@ -21,7 +21,7 @@ Clojure and NPM parent package definitions
   "dry": {
     "extends": "@io.jesi/parent/package-dry.json",
     "dependencies": {
-      "@io.jesi/parent": "0.0.1"
+      "@io.jesi/parent": "X.Y.Z"
     }
   },
   "devDependencies": {
