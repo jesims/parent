@@ -1,6 +1,6 @@
 {
   "name": "@io.jesi/parent",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "dependencyManagement": {
     "karma": "3.0.0",
     "karma-chrome-launcher": "2.2.0",
