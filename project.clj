@@ -7,7 +7,7 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.8.1"
   :managed-dependencies [[org.clojure/clojure "1.9.0"]
-                         [org.clojure/clojurescript "1.10.339"]
+                         [org.clojure/clojurescript "1.10.439"]
                          [org.clojure/core.async "0.4.490"]
                          [org.clojure/java.jdbc "0.7.8"]
                          [thheller/shadow-cljs "2.7.4"]
