@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "0.0.6"
+(defproject io.jesi/parent "0.0.7"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -10,7 +10,7 @@
                          [org.clojure/clojurescript "1.10.439"]
                          [org.clojure/core.async "0.4.490"]
                          [org.clojure/java.jdbc "0.7.8"]
-                         [thheller/shadow-cljs "2.7.4"]
+                         [thheller/shadow-cljs "2.7.6"]
                          [com.rpl/specter "1.1.2"]
                          [io.jesi/backpack "0.0.19"]]
   :dependencies [[org.clojure/clojure]]
