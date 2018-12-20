@@ -12,7 +12,7 @@
                          [org.clojure/java.jdbc "0.7.8"]
                          [thheller/shadow-cljs "2.7.9"]
                          [com.rpl/specter "1.1.2"]
-                         [io.jesi/backpack "0.0.19"]]
+                         [io.jesi/backpack "0.0.20"]]
   :dependencies [[org.clojure/clojure]]
   :exclusions [org.clojure/clojure
                org.clojure/clojurescript]
