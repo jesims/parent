@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "0.0.13"
+(defproject io.jesi/parent "0.0.14"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -12,16 +12,16 @@
                          [org.clojure/java.jdbc "0.7.8"]
                          [thheller/shadow-cljs "2.7.9"]
                          [com.rpl/specter "1.1.2"]
-                         [io.jesi/backpack "0.0.24"]]
+                         [io.jesi/backpack "0.0.26"]]
   :dependencies [[org.clojure/clojure]]
   :exclusions [org.clojure/clojure
                org.clojure/clojurescript]
-  :profiles {:dev {:plugins      [[com.jakemccrary/lein-test-refresh "0.22.0"]
-                                  [lein-ancient "0.6.14"]
+  :profiles {:dev {:plugins      [[com.jakemccrary/lein-test-refresh "0.24.1"]
+                                  [lein-ancient "0.6.15"]
                                   [lein-auto "0.1.3"]
                                   [lein-set-version "0.4.1"]
-                                  [venantius/ultra "0.5.2" :exclusions [org.clojure/clojure]]]
-                   :dependencies [[circleci/circleci.test "0.4.1"]
+                                  [venantius/ultra "0.6.0" :exclusions [org.clojure/clojure]]]
+                   :dependencies [[circleci/circleci.test "0.4.2"]
                                   [pjstadig/humane-test-output "0.9.0"]]
                    :injections   [(require 'pjstadig.humane-test-output)
                                   (pjstadig.humane-test-output/activate!)]}}
