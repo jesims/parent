@@ -12,7 +12,7 @@
                          [org.clojure/java.jdbc "0.7.9"]
                          [thheller/shadow-cljs "2.8.36"]
                          [com.rpl/specter "1.1.2"]
-                         [io.jesi/backpack "0.0.21"]]
+                         [io.jesi/backpack "0.0.31"]]
   :dependencies [[org.clojure/clojure]]
   :exclusions [org.clojure/clojure org.clojure/clojurescript]
   :profiles {:dev {:plugins      [[com.jakemccrary/lein-test-refresh "0.24.1"]
