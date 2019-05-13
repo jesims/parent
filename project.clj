@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "0.0.15"
+(defproject io.jesi/parent "0.0.16"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -6,21 +6,20 @@
             :distribution :repo
             :comments     "same as Clojure"}
   :min-lein-version "2.8.1"
-  :managed-dependencies [[org.clojure/clojure "1.9.0"]
+  :managed-dependencies [[org.clojure/clojure "1.10.0"]
                          [org.clojure/clojurescript "1.10.520"]
                          [org.clojure/core.async "0.4.490"]
-                         [org.clojure/java.jdbc "0.7.8"]
-                         [thheller/shadow-cljs "2.8.35"]
+                         [org.clojure/java.jdbc "0.7.9"]
+                         [thheller/shadow-cljs "2.8.36"]
                          [com.rpl/specter "1.1.2"]
-                         [io.jesi/backpack "0.0.29"]]
+                         [io.jesi/backpack "0.0.31"]]
   :dependencies [[org.clojure/clojure]]
-  :exclusions [org.clojure/clojure
-               org.clojure/clojurescript]
+  :exclusions [org.clojure/clojure org.clojure/clojurescript]
   :profiles {:dev {:plugins      [[com.jakemccrary/lein-test-refresh "0.24.1"]
                                   [lein-ancient "0.6.15"]
                                   [lein-auto "0.1.3"]
                                   [lein-set-version "0.4.1"]
-                                  [venantius/ultra "0.6.0" :exclusions [org.clojure/clojure]]]
+                                  [venantius/ultra "0.6.0"]]
                    :dependencies [[circleci/circleci.test "0.4.2"]
                                   [pjstadig/humane-test-output "0.9.0"]]
                    :injections   [(require 'pjstadig.humane-test-output)
