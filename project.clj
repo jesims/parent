@@ -1,6 +1,6 @@
 (def slf4j-version "1.7.26")
 
-(defproject io.jesi/parent "0.0.19"
+(defproject io.jesi/parent "0.0.20"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -9,7 +9,7 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.8.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
-                         [thheller/shadow-cljs "2.8.39"]
+                         [thheller/shadow-cljs "2.8.37"]
                          [io.jesi/backpack "1.1.0"]
                          [com.rpl/specter "1.1.2"]
                          [org.clojure/core.async "0.4.490"]
