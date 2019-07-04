@@ -13,8 +13,13 @@
                          [io.jesi/backpack "1.1.0"]
                          [com.rpl/specter "1.1.2"]
                          [org.clojure/core.async "0.4.490"]
+                         ;DB
                          [org.clojure/java.jdbc "0.7.9"]
-                         ;logging
+                         [org.postgresql/postgresql "42.2.1"]
+                         [clj-postgresql "0.7.0"]
+                         [hikari-cp "2.7.1"]
+                         [nilenso/honeysql-postgres "0.2.4"]
+                         ;Logging
                          [ch.qos.logback/logback-classic "1.2.3"]
                          [org.slf4j/jcl-over-slf4j ~slf4j-version]
                          [org.slf4j/jul-to-slf4j ~slf4j-version]
