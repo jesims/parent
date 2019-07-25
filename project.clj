@@ -9,7 +9,7 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.8.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
-                         [thheller/shadow-cljs "2.8.37"]
+                         [thheller/shadow-cljs "2.8.41"]
                          [io.jesi/backpack "1.1.0"]
                          [com.rpl/specter "1.1.2"]
                          [org.clojure/core.async "0.4.490"]
@@ -31,12 +31,8 @@
   :profiles {:dev {:plugins      [[com.jakemccrary/lein-test-refresh "0.24.1"]
                                   [lein-ancient "0.6.15"]
                                   [lein-auto "0.1.3"]
-                                  [lein-set-version "0.4.1"]
-                                  [venantius/ultra "0.6.0"]]
-                   :dependencies [[circleci/circleci.test "0.4.2"]
-                                  [pjstadig/humane-test-output "0.9.0"]]
-                   :injections   [(require 'pjstadig.humane-test-output)
-                                  (pjstadig.humane-test-output/activate!)]}}
+                                  [lein-set-version "0.4.1"]]
+                   :dependencies [[circleci/circleci.test "0.4.2"]]}}
   :global-vars {*warn-on-reflection* true}
   :test-refresh {:quiet        true
                  :with-repl    true
