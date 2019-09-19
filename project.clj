@@ -1,6 +1,6 @@
 (def slf4j-version "1.7.26")
 
-(defproject io.jesi/parent "0.0.22"
+(defproject io.jesi/parent "0.0.23"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -10,14 +10,13 @@
   :min-lein-version "2.8.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
                          [thheller/shadow-cljs "2.8.41"]
-                         [io.jesi/backpack "2.0.0"]
+                         [io.jesi/backpack "3.1.0"]
                          [com.rpl/specter "1.1.2"]
                          [org.clojure/core.async "0.4.490"]
                          ;DB
                          [org.clojure/java.jdbc "0.7.9"]
                          [org.postgresql/postgresql "42.2.1"]
                          [clj-postgresql "0.7.0"]
-                         [hikari-cp "2.7.1"]
                          [nilenso/honeysql-postgres "0.2.4"]
                          ;Logging
                          [ch.qos.logback/logback-classic "1.2.3"]
