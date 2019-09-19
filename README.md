@@ -9,7 +9,7 @@ Clojure and NPM parent package definitions
 
 ## In Clojure
 ```clojure
-  :plugins [[lein-parent "0.3.5"]]
+  :plugins [[lein-parent "0.3.6"]]
   :parent-project {:coords [io.jesi/parent "X.Y.Z"]
                    :inherit [:plugins :repositories :managed-dependencies :dependencies :exclusions [:profiles :dev] :test-refresh]}
 ```
