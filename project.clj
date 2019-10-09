@@ -10,7 +10,7 @@
   :min-lein-version "2.8.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
                          [thheller/shadow-cljs "2.8.41"]
-                         [io.jesi/backpack "3.2.1"]
+                         [io.jesi/backpack "3.3.1"]
                          [com.rpl/specter "1.1.2"]
                          [org.clojure/core.async "0.4.490"]
                          ;DB
