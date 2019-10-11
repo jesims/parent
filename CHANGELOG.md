@@ -1,3 +1,7 @@
+# 1.0.0
+* About time it's v1.0.0
+* Added `lein lint`
+
 # 0.0.26
 
 ## Changed

@@ -1,6 +1,6 @@
 (def slf4j-version "1.7.26")
 
-(defproject io.jesi/parent "0.0.26"
+(defproject io.jesi/parent "1.0.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -30,6 +30,8 @@
   :profiles {:dev {:plugins      [[com.jakemccrary/lein-test-refresh "0.24.1"]
                                   [lein-ancient "0.6.15"]
                                   [lein-auto "0.1.3"]
+                                  [lein-nsorg "0.3.0"]
+                                  [lein-pprint "1.2.0"]
                                   [lein-set-version "0.4.1"]]
                    :dependencies [[circleci/circleci.test "0.4.2"]]}}
   :global-vars {*warn-on-reflection* true}
@@ -39,4 +41,5 @@
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
                                     :username      :env/clojars_username
                                     :password      :env/clojars_password
-                                    :sign-releases false}]])
+                                    :sign-releases false}]]
+  :aliases {"lint" ["nsorg" "--replace"]})
