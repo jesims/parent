@@ -1,3 +1,6 @@
+# 2.0.0
+* Rename `:dev` profile to `:parent/dev`
+
 # 1.0.2
 * Update `io.jesi/backpack` to `3.7.0`
 * Update `thheller/shadow-cljs` to `2.8.74`
