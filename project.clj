@@ -1,6 +1,6 @@
 (def slf4j-version "1.7.26")
 
-(defproject io.jesi/parent "2.0.0"
+(defproject io.jesi/parent "2.1.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -35,11 +35,15 @@
                                          [lein-set-version "0.4.1"]]
                           :dependencies [[circleci/circleci.test "0.4.2"]]}}
   :global-vars {*warn-on-reflection* true}
-  :test-refresh {:quiet        true
+  :test-refresh {:focus-flag   :focus
+                 :quiet        true
                  :with-repl    true
                  :changes-only true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
                                     :username      :env/clojars_username
                                     :password      :env/clojars_password
                                     :sign-releases false}]]
-  :aliases {"lint" ["nsorg" "--replace"]})
+  :aliases {"lint"   ["nsorg" "--replace"]
+            "test"   ["run" "-m" "circleci.test/dir" :project/test-paths]
+            "tests"  ["run" "-m" "circleci.test"]
+            "retest" ["run" "-m" "circleci.test.retest"]})
