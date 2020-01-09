@@ -1,3 +1,14 @@
+# 3.0.0
+
+* Added codox and `docs` alias
+* Changed to kaocha test runner
+* Removed `lein-test-refresh` dev plugin
+* Removed logging managed deps. Use [driftwood](https://github.com/jesims/driftwood)
+* Added default `:dev` and `:test` profiles
+* Added `org.clojure/clojurescript` managed dependency
+* Added `io.jesi/customs` dev dependency
+* Updated managed dependencies
+
 # 2.0.0
 * Rename `:dev` profile to `:parent/dev`
 
