@@ -29,7 +29,7 @@
                                          [lambdaisland/kaocha "0.0-565"]
                                          [lambdaisland/kaocha-cljs "0.0-68"]]}
              :dev        [:parent/dev]
-             :test       [:parent/dev]}
+             :test       [:dev]}
   :global-vars {*warn-on-reflection* true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
                                     :username      :env/clojars_username
