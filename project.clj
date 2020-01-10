@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.0.1"
+(defproject io.jesi/parent "3.0.2"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -27,9 +27,7 @@
                                          [lein-pprint "1.2.0"]
                                          [lein-set-version "0.4.1"]]
                           :dependencies [[lambdaisland/kaocha "0.0-565"]
-                                         [lambdaisland/kaocha-cljs "0.0-68"]]}
-             :dev        [:parent/dev]
-             :test       [:dev]}
+                                         [lambdaisland/kaocha-cljs "0.0-68"]]}}
   :global-vars {*warn-on-reflection* true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
                                     :username      :env/clojars_username
