@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.0.0"
+(defproject io.jesi/parent "3.0.1"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -10,6 +10,7 @@
                          [thheller/shadow-cljs "2.8.77"]
                          [org.clojure/clojurescript "1.10.597"] ;Match version used in shadow-cljs
                          [io.jesi/backpack "5.0.0"]
+                         [io.jesi/customs "1.0.0"]
                          [com.rpl/specter "1.1.3"]
                          [org.clojure/core.async "0.6.532"]
                          ;DB
@@ -25,8 +26,7 @@
                                          [lein-nsorg "0.3.0"]
                                          [lein-pprint "1.2.0"]
                                          [lein-set-version "0.4.1"]]
-                          :dependencies [[io.jesi/customs "1.0.0"]
-                                         [lambdaisland/kaocha "0.0-565"]
+                          :dependencies [[lambdaisland/kaocha "0.0-565"]
                                          [lambdaisland/kaocha-cljs "0.0-68"]]}
              :dev        [:parent/dev]
              :test       [:dev]}
