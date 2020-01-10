@@ -1,3 +1,7 @@
+# 3.0.1
+
+* Fix unable to find `io.jesi/customs` by moving to to managed dependency
+
 # 3.0.0
 
 * Added codox and `docs` alias
