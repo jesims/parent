@@ -1,3 +1,7 @@
+# 3.0.2
+
+* Fix not being able to set own :dev and :test profiles by removing them
+
 # 3.0.1
 
 * Fix unable to find `io.jesi/customs` by moving to to managed dependency
