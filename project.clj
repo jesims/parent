@@ -34,6 +34,12 @@
                                     :password      :env/clojars_password
                                     :sign-releases false}]]
   :codox {:output-path "docs"}
+  ;FIXME add clj-kondo
+  ;FIXME add eastwood
+  ;FIXME add kibit
+  ;FIXME update bindle
+  ;- add clj-kondo confi
+  ;- copy to project (like tests.edn)
   :aliases {"lint"         ["nsorg" "--replace"]
             "test"         ["run" "-m" "kaocha.runner"]
             "tests"        ["test" "--focus"]
