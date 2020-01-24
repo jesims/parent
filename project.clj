@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.0.2"
+(defproject io.jesi/parent "3.1.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -20,13 +20,17 @@
                          [nilenso/honeysql-postgres "0.2.6"]]
   :dependencies [[org.clojure/clojure]]
   :exclusions [org.clojure/clojure org.clojure/clojurescript]
-  :profiles {:parent/dev {:plugins      [[lein-ancient "0.6.15"]
+  :profiles {:parent/dev {:plugins      [[jonase/eastwood "0.3.7"]
+                                         [lein-ancient "0.6.15"]
                                          [lein-auto "0.1.3"]
                                          [lein-codox "0.10.7"]
+                                         [lein-kibit "0.1.8"]
                                          [lein-nsorg "0.3.0"]
                                          [lein-pprint "1.2.0"]
                                          [lein-set-version "0.4.1"]]
-                          :dependencies [[lambdaisland/kaocha "0.0-565"]
+                          :eastwood     {:exclude-linters [:local-shadows-var]}
+                          :dependencies [[clj-kondo "RELEASE"]
+                                         [lambdaisland/kaocha "0.0-565"]
                                          [lambdaisland/kaocha-cljs "0.0-68"]]}}
   :global-vars {*warn-on-reflection* true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
@@ -34,14 +38,18 @@
                                     :password      :env/clojars_password
                                     :sign-releases false}]]
   :codox {:output-path "docs"}
-  ;FIXME add clj-kondo
-  ;FIXME add eastwood
-  ;FIXME add kibit
-  ;FIXME update bindle
-  ;- add clj-kondo confi
-  ;- copy to project (like tests.edn)
-  :aliases {"lint"         ["nsorg" "--replace"]
-            "test"         ["run" "-m" "kaocha.runner"]
-            "tests"        ["test" "--focus"]
-            "test-refresh" ["test" "--watch"]
+  :aliases {"run-main"     ["trampoline" "run" "-m"]
+            "clj-kondo"    ["run-main" "clj-kondo.main"]
+            "kaocha"       ["run-main" "kaocha.runner"]
+            "lint-nsorg"   ["nsorg" "--replace"]
+            "lint-kondo"   ["clj-kondo" "--quote-args" "--" "--cache" "--lint" :project/source-paths]
+            "lint-kibit"   ["kibit" "--replace"]
+            "lint"         ["do"
+                            ["lint-nsorg"]
+                            ["eastwood"]
+                            ["lint-kondo"]
+                            ["lint-kibit"]]
+            "test"         ["kaocha"]
+            "tests"        ["kaocha" "--focus"]
+            "test-refresh" ["kaocha" "--watch"]
             "docs"         ["codox"]})

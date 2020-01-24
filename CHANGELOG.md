@@ -1,3 +1,7 @@
+# 3.1.0
+
+* Added more linting and aliases
+
 # 3.0.2
 
 * Fix not being able to set own :dev and :test profiles by removing them
