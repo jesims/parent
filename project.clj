@@ -38,19 +38,20 @@
                                     :password      :env/clojars_password
                                     :sign-releases false}]]
   :codox {:output-path "docs"}
-  :aliases {"run-main"     ["trampoline" "run" "-m"]
-            "clj-kondo"    ["run-main" "clj-kondo.main"]
-            "kaocha"       ["run-main" "kaocha.runner"]
-            "lint-nsorg"   ["nsorg" "--replace"]
-            ;TODO use :project/source-paths
-            "lint-kondo"   ["clj-kondo" "--" "--cache" "--lint" "src"]
-            "lint-kibit"   ["kibit" "--replace"]
-            "lint"         ["do"
-                            ["lint-nsorg"]
-                            ["eastwood"]
-                            ["lint-kibit"]
-                            ["lint-kondo"]]
-            "test"         ["kaocha"]
-            "tests"        ["kaocha" "--focus"]
-            "test-refresh" ["kaocha" "--watch"]
-            "docs"         ["codox"]})
+  :aliases {"run-main"        ["trampoline" "run" "-m"]
+            "clj-kondo"       ["run-main" "clj-kondo.main"]
+            "kaocha"          ["run-main" "kaocha.runner"]
+            "lint-nsorg"      ["nsorg" "--replace"]
+            "lint-kondo"      ["clj-kondo" "--" "--cache" "--lint" "src"] ;TODO use :project/source-paths
+            "lint-test-kondo" ["clj-kondo" "--" "--cache" "--lint" "test"] ;TODO use :project/test-paths
+            "lint-kibit"      ["kibit" "--replace"]
+            "lint"            ["do"
+                               ["lint-nsorg"]
+                               ["eastwood"]
+                               ["lint-kibit"]
+                               ["lint-kondo"]
+                               ["lint-test-kondo"]]
+            "test"            ["kaocha"]
+            "tests"           ["kaocha" "--focus"]
+            "test-refresh"    ["kaocha" "--watch"]
+            "docs"            ["codox"]})
