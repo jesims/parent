@@ -42,13 +42,14 @@
             "clj-kondo"    ["run-main" "clj-kondo.main"]
             "kaocha"       ["run-main" "kaocha.runner"]
             "lint-nsorg"   ["nsorg" "--replace"]
-            "lint-kondo"   ["clj-kondo" "--quote-args" "--" "--cache" "--lint" :project/source-paths]
+            ;TODO use :project/source-paths
+            "lint-kondo"   ["clj-kondo" "--" "--cache" "--lint" "src"]
             "lint-kibit"   ["kibit" "--replace"]
             "lint"         ["do"
                             ["lint-nsorg"]
                             ["eastwood"]
-                            ["lint-kondo"]
-                            ["lint-kibit"]]
+                            ["lint-kibit"]
+                            ["lint-kondo"]]
             "test"         ["kaocha"]
             "tests"        ["kaocha" "--focus"]
             "test-refresh" ["kaocha" "--watch"]
