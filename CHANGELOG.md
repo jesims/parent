@@ -1,3 +1,7 @@
+# 3.2.0
+
+* Changed default linting to use `check` instead of `eastwood`
+
 # 3.1.0
 
 * Added more linting and aliases

@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.1.0"
+(defproject io.jesi/parent "3.2.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -47,7 +47,7 @@
             "lint-kibit"      ["kibit" "--replace"]
             "lint"            ["do"
                                ["lint-nsorg"]
-                               ["eastwood"]
+                               ["check"]
                                ["lint-kibit"]
                                ["lint-kondo"]
                                ["lint-test-kondo"]]
