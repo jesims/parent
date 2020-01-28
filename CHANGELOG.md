@@ -1,3 +1,7 @@
+# 3.3.0
+
+* Removed `kibit` from default linters
+
 # 3.2.0
 
 * Changed default linting to use `check` instead of `eastwood`
