@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.2.0"
+(defproject io.jesi/parent "3.3.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -44,11 +44,9 @@
             "lint-nsorg"      ["nsorg" "--replace"]
             "lint-kondo"      ["clj-kondo" "--" "--cache" "--lint" "src"] ;TODO use :project/source-paths
             "lint-test-kondo" ["clj-kondo" "--" "--cache" "--lint" "test"] ;TODO use :project/test-paths
-            "lint-kibit"      ["kibit" "--replace"]
             "lint"            ["do"
                                ["lint-nsorg"]
                                ["check"]
-                               ["lint-kibit"]
                                ["lint-kondo"]
                                ["lint-test-kondo"]]
             "test"            ["kaocha"]
