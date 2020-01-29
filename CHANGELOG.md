@@ -1,3 +1,8 @@
+# 3.3.1
+
+* Update `org.clojure/core.async` to `0.7.559`
+* Update `lambdaisland/kaocha` to `0.0-581`
+
 # 3.3.0
 
 * Removed `kibit` from default linters
