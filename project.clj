@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.3.0"
+(defproject io.jesi/parent "3.3.1"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -7,12 +7,12 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
-                         [thheller/shadow-cljs "2.8.77"]
+                         [thheller/shadow-cljs "2.8.77"]    ;TODO update to latest (at least 2.8.83)
                          [org.clojure/clojurescript "1.10.597"] ;Match version used in shadow-cljs
                          [io.jesi/backpack "5.0.0"]
                          [io.jesi/customs "1.0.0"]
                          [com.rpl/specter "1.1.3"]
-                         [org.clojure/core.async "0.6.532"]
+                         [org.clojure/core.async "0.7.559"]
                          ;DB
                          [org.clojure/java.jdbc "0.7.11"]
                          [org.postgresql/postgresql "42.2.9"]
@@ -30,7 +30,7 @@
                                          [lein-set-version "0.4.1"]]
                           :eastwood     {:exclude-linters [:local-shadows-var]}
                           :dependencies [[clj-kondo "RELEASE"]
-                                         [lambdaisland/kaocha "0.0-565"]
+                                         [lambdaisland/kaocha "0.0-581"]
                                          [lambdaisland/kaocha-cljs "0.0-68"]]}}
   :global-vars {*warn-on-reflection* true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
