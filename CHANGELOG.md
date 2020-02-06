@@ -1,3 +1,7 @@
+# 3.4.0
+
+* Added [shadow-cljs](https://github.com/thheller/shadow-cljs) develop dependency and alias
+
 # 3.3.1
 
 * Update `org.clojure/core.async` to `0.7.559`

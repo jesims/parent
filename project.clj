@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.3.1"
+(defproject io.jesi/parent "3.4.0-SNAPSHOT"                 ;FIXME remove snapshot
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -19,7 +19,6 @@
                          [clj-postgresql "0.7.0"]
                          [nilenso/honeysql-postgres "0.2.6"]]
   :dependencies [[org.clojure/clojure]]
-  :exclusions [org.clojure/clojure org.clojure/clojurescript]
   :profiles {:parent/dev {:plugins      [[jonase/eastwood "0.3.7"]
                                          [lein-ancient "0.6.15"]
                                          [lein-auto "0.1.3"]
@@ -29,8 +28,10 @@
                                          [lein-pprint "1.2.0"]
                                          [lein-set-version "0.4.1"]]
                           :eastwood     {:exclude-linters [:local-shadows-var]}
+                          ;TODO split CLJ and CLJS dependencies to separate profiles
                           :dependencies [[clj-kondo "RELEASE"]
                                          [lambdaisland/kaocha "0.0-581"]
+                                         [thheller/shadow-cljs]
                                          [lambdaisland/kaocha-cljs "0.0-68"]]}}
   :global-vars {*warn-on-reflection* true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
@@ -41,6 +42,7 @@
   :aliases {"run-main"        ["trampoline" "run" "-m"]
             "clj-kondo"       ["run-main" "clj-kondo.main"]
             "kaocha"          ["run-main" "kaocha.runner"]
+            "shadow-cljs"     ["run-main" "shadow.cljs.devtools.cli"]
             "lint-nsorg"      ["nsorg" "--replace"]
             "lint-kondo"      ["clj-kondo" "--" "--cache" "--lint" "src"] ;TODO use :project/source-paths
             "lint-test-kondo" ["clj-kondo" "--" "--cache" "--lint" "test"] ;TODO use :project/test-paths
