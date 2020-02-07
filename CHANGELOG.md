@@ -1,6 +1,9 @@
 # 3.4.0
 
 * Added [shadow-cljs](https://github.com/thheller/shadow-cljs) develop dependency and alias
+* Update `thheller/shadow-cljs` to `2.8.83`
+* Update `lambdaisland/kaocha` to `0.0-590`
+* Update `org.postgresql/postgresql` to `42.2.10`]
 
 # 3.3.1
 

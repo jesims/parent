@@ -7,7 +7,7 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
-                         [thheller/shadow-cljs "2.8.77"]    ;TODO update to latest (at least 2.8.83)
+                         [thheller/shadow-cljs "2.8.83"]
                          [org.clojure/clojurescript "1.10.597"] ;Match version used in shadow-cljs
                          [io.jesi/backpack "5.0.0"]
                          [io.jesi/customs "1.0.0"]
@@ -15,7 +15,7 @@
                          [org.clojure/core.async "0.7.559"]
                          ;DB
                          [org.clojure/java.jdbc "0.7.11"]
-                         [org.postgresql/postgresql "42.2.9"]
+                         [org.postgresql/postgresql "42.2.10"]
                          [clj-postgresql "0.7.0"]
                          [nilenso/honeysql-postgres "0.2.6"]]
   :dependencies [[org.clojure/clojure]]
@@ -30,8 +30,9 @@
                           :eastwood     {:exclude-linters [:local-shadows-var]}
                           ;TODO split CLJ and CLJS dependencies to separate profiles
                           :dependencies [[clj-kondo "RELEASE"]
-                                         [lambdaisland/kaocha "0.0-581"]
+                                         [lambdaisland/kaocha "0.0-590"]
                                          [thheller/shadow-cljs]
+                                         [org.clojure/clojurescript]
                                          [lambdaisland/kaocha-cljs "0.0-68"]]}}
   :global-vars {*warn-on-reflection* true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
