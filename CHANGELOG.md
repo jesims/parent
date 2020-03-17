@@ -1,3 +1,7 @@
+# 3.5.0
+* Changed `lein-pprint` to be a (non `:dev`) plugin
+* Updated lein-pprint to `1.3.2`
+
 # 3.4.0
 
 * Added [shadow-cljs](https://github.com/thheller/shadow-cljs) develop dependency and alias
