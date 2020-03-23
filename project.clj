@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.4.0"
+(defproject io.jesi/parent "3.5.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -19,13 +19,13 @@
                          [clj-postgresql "0.7.0"]
                          [nilenso/honeysql-postgres "0.2.6"]]
   :dependencies [[org.clojure/clojure]]
+  :plugins [[lein-pprint "1.3.2"]]
   :profiles {:parent/dev {:plugins      [[jonase/eastwood "0.3.7"]
                                          [lein-ancient "0.6.15"]
                                          [lein-auto "0.1.3"]
                                          [lein-codox "0.10.7"]
                                          [lein-kibit "0.1.8"]
                                          [lein-nsorg "0.3.0"]
-                                         [lein-pprint "1.2.0"]
                                          [lein-set-version "0.4.1"]]
                           :eastwood     {:exclude-linters [:local-shadows-var]}
                           ;TODO split CLJ and CLJS dependencies to separate profiles
