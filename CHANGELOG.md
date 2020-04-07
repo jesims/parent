@@ -1,3 +1,6 @@
+# 3.6.0
+* Updated `io.jesi/backpack` to `5.1.0`
+
 # 3.5.0
 * Changed `lein-pprint` to be a (non `:dev`) plugin
 * Updated lein-pprint to `1.3.2`
