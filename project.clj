@@ -9,7 +9,7 @@
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
                          [thheller/shadow-cljs "2.8.99"]
                          [org.clojure/clojurescript "1.10.597"] ;Match version used in shadow-cljs
-                         [io.jesi/backpack "5.1.0"]
+                         [io.jesi/backpack "5.1.1"]
                          [io.jesi/customs "1.1.0"]
                          [com.rpl/specter "1.1.3"]
                          [org.clojure/core.async "1.1.587"]
