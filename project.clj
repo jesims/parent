@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "3.6.0"
+(defproject io.jesi/parent "3.7.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -7,12 +7,12 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
-                         [thheller/shadow-cljs "2.8.83"]
+                         [thheller/shadow-cljs "2.8.99"]
                          [org.clojure/clojurescript "1.10.597"] ;Match version used in shadow-cljs
                          [io.jesi/backpack "5.1.0"]
-                         [io.jesi/customs "1.0.0"]
+                         [io.jesi/customs "1.1.0"]
                          [com.rpl/specter "1.1.3"]
-                         [org.clojure/core.async "0.7.559"]
+                         [org.clojure/core.async "1.1.587"]
                          ;DB
                          [org.clojure/java.jdbc "0.7.11"]
                          [org.postgresql/postgresql "42.2.10"]

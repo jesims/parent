@@ -1,3 +1,8 @@
+# 3.7.0
+* Updated `thheller/shadow-cljs` to `2.8.99`]
+* Updated `io.jesi/customs` to `1.1.0`]
+* Updated `org.clojure/core.async` to `1.1.587`]
+
 # 3.6.0
 * Updated `io.jesi/backpack` to `5.1.0`
 
