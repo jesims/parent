@@ -1,3 +1,6 @@
+# 3.7.0
+* Updated `io.jesi/backpack` to `5.1.1`
+
 # 3.6.0
 * Updated `io.jesi/backpack` to `5.1.0`
 
