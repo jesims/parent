@@ -1,4 +1,4 @@
-# project.clj 3.7.0
+# project.clj 3.9.0
 
 Update
 
@@ -19,6 +19,15 @@ Add
 
 * `source-map-support` dev dependency
 * `ws` dev dependency
+* `karam` dev dependency
+
+# 3.8.0
+
+* Updated `io.jesi/backpack` to `5.2.0`
+
+# 3.7.0
+
+* Updated `io.jesi/backpack` to `5.1.1`
 
 # 3.6.0
 
