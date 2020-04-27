@@ -17,6 +17,7 @@ jobs:
       - *cancel
       - checkout
       - *sub
+      - run: './parent.sh deps'
       - run: './parent.sh lint'
   deploy:
     <<: *default
