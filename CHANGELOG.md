@@ -2,7 +2,7 @@
 
 Update
 
-* `thheller/shadow-cljs` to `2.8.104`
+* `thheller/shadow-cljs` to `2.8.105`
 * `io.jesi/customs` to `1.1.0`
 * `org.clojure/core.async` to `1.1.587`
 * `lambdaisland/kaocha` to `1.0-612`

@@ -1,10 +1,11 @@
-!.git*
-!/.circleci/
-!/.npmignore
-.*
+/.clj-kondo/
+/.idea/dictionaries/
+/.idea/libraries/
+/.idea/workspace.xml
+/.remarkrc.js
 /node_modules/
 /package-lock.json
 /package.json
 /pom.xml
+/project.edn
 /target/
-project.edn
