@@ -7,7 +7,7 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
   :managed-dependencies [[org.clojure/clojure "1.10.1"]
-                         [thheller/shadow-cljs "2.8.106"]
+                         [thheller/shadow-cljs "2.8.109"]
                          [io.jesi/backpack "5.2.0"]
                          [io.jesi/customs "1.1.0"]
                          [com.rpl/specter "1.1.3"]
@@ -17,7 +17,7 @@
                          [org.postgresql/postgresql "42.2.10"] ;TODO update to latest (42.2.12)
                          [clj-postgresql "0.7.0"]
                          [nilenso/honeysql-postgres "0.2.6"]
-                         ;Match versions used in shadow-cljs https://github.com/thheller/shadow-cljs/blob/2.8.106/project.clj
+                         ;Match versions used in shadow-cljs https://github.com/thheller/shadow-cljs/blob/master/project.clj
                          [org.clojure/clojurescript "1.10.741"]
                          [com.google.javascript/closure-compiler-unshaded "v20200406"]
                          [org.clojure/google-closure-library "0.0-20191016-6ae1f72f"]
