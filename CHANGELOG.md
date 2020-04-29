@@ -19,7 +19,7 @@ Add
 
 * `source-map-support` dev dependency
 * `ws` dev dependency
-* `karam` dev dependency
+* `karama` dev dependency
 
 # 3.8.0
 
