@@ -15,11 +15,14 @@ Update
 
 * `standard` to `14.3.3`
 
-Add 
+Added dev dependencies
 
-* `source-map-support` dev dependency
-* `ws` dev dependency
-* `karama` dev dependency
+* `karma`
+* `karma-chrome-launcher`
+* `karma-cljs-test`
+* `remark-cli`
+* `source-map-support`
+* `ws`
 
 # 3.8.0
 
