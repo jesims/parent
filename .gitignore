@@ -4,7 +4,6 @@
 /.idea/workspace.xml
 /.remarkrc.js
 /node_modules/
-/package-lock.json
 /package.json
 /pom.xml
 /project.edn
