@@ -1,38 +1,54 @@
-#TODO use clojure config
-version: 2
+version: 2.1
 default: &default
   docker:
-  - image: jesiio/build-bus:latest
-    environment:
-      JVM_OPTS: -Xmx3200m
-      DEBUG: 1
+    - image: jesiio/build-bus:latest
+      user: node
+aliases:
+  cancel_redundant: &cancel
+    run:
+      name: Check & Cancel Redundant Build
+      command: 'cancel-redundant-builds.sh'
+  submodule: &sub
+    run: git submodule update --init --recursive
 jobs:
+  lint:
+    <<: *default
+    steps:
+      - *cancel
+      - checkout
+      - *sub
+      - run: './parent.sh deps'
+      - run: './parent.sh lint'
   deploy:
     <<: *default
     steps:
-    - checkout
-    - run: lein deploy clojars
+      - *cancel
+      - checkout
+      - *sub
+      - run: './parent.sh deploy'
   publish:
     <<: *default
     steps:
-    - checkout
-    - run:
-        name: Authenticate with registry
-        command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
-    - run:
-        name: Publish npm package
-        command: dry publish --access public
+      - *cancel
+      - checkout
+      - *sub
+      - run: './parent.sh publish'
 workflows:
   version: 2
   main:
     jobs:
-    - deploy:
-        context: JESI
-        filters:
-          branches:
-            only: master
-    - publish:
-        context: JESI
-        filters:
-          branches:
-            only: master
+      - lint
+      - deploy:
+          requires:
+            - lint
+          context: JESI
+          filters:
+            branches:
+              only: master
+      - publish:
+          requires:
+            - lint
+          context: JESI
+          filters:
+            branches:
+              only: master

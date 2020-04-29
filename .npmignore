@@ -1,3 +1,6 @@
 .*
-/target/
+/bindle
+/parent.sh
+/pom.xml
 /project.clj
+/target/

@@ -1,3 +1,29 @@
+# project.clj 3.9.0
+
+Update
+
+* `thheller/shadow-cljs` to `2.8.109`
+* `io.jesi/customs` to `1.1.0`
+* `org.clojure/core.async` to `1.1.587`
+* `lambdaisland/kaocha` to `1.0-612`
+* `lambdaisland/kaocha-cljs` to `0.0-71`
+* `jonase/eastwood` to `0.3.11`
+
+# package-dry.json 0.1.0
+
+Update
+
+* `standard` to `14.3.3`
+
+Added dev dependencies
+
+* `karma`
+* `karma-chrome-launcher`
+* `karma-cljs-test`
+* `remark-cli`
+* `source-map-support`
+* `ws`
+
 # 3.8.0
 
 * Updated `io.jesi/backpack` to `5.2.0`
@@ -59,9 +85,11 @@
 * Updated managed dependencies
 
 # 2.0.0
+
 * Rename `:dev` profile to `:parent/dev`
 
 # 1.0.2
+
 * Update `io.jesi/backpack` to `3.7.0`
 * Update `thheller/shadow-cljs` to `2.8.74`
 * Update `com.rpl/specter` to `1.1.3`
@@ -71,21 +99,26 @@
 * Update `nilenso/honeysql-postgres` to `0.2.6`
 
 # 1.0.1
+
 * Update `io.jesi/backpack` to `3.5.0`
 
 # 1.0.0
+
 * About time it's v1.0.0
 * Added `lein lint`
 
 # 0.0.26
 
 ## Changed
+
 * Update `io.jesi/backpack` to `3.3.1`
 
 # 0.0.23
 
 ## Changed
+
 * Updated `io.jesi/backpack` to `3.1.0`
 
 ## Removed
+
 * `hikari-cp`

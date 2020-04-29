@@ -1,4 +1,5 @@
 # Parent
+
 Clojure and NPM parent package definitions
 
 ## Latest Version
@@ -8,6 +9,7 @@ Clojure and NPM parent package definitions
 [![CircleCI](https://circleci.com/gh/jesims/parent.svg?style=svg)](https://circleci.com/gh/jesims/parent)
 
 ## In Clojure
+
 ```clojure
   :plugins [[lein-parent "0.3.6"]]
   :parent-project {:coords [io.jesi/parent "X.Y.Z"]
@@ -15,6 +17,7 @@ Clojure and NPM parent package definitions
 ```
 
 ## In Javascript
+
 ```javascript
 {
   ...
