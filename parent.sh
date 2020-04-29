@@ -41,10 +41,10 @@ deploy(){
 publish(){
 	if is-ci;then
 		require-var NPM_TOKEN
-    echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > "$HOME"/.npmrc
-    abort-on-error 'creating .npmrc'
-  fi
-  dry publish --access public
+		echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > "$HOME"/.npmrc
+		abort-on-error 'creating .npmrc'
+	fi
+	dry publish --access public
 }
 
 script-invoke "$@"
