@@ -1,3 +1,10 @@
+# project.clj 3.10.0
+
+Update
+
+* `io.jesi/backpack` to `5.2.2`
+* `io.jesi/customs` to `1.1.1`
+
 # project.clj 3.9.0
 
 Update
