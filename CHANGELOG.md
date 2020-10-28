@@ -3,6 +3,9 @@
 Update
 
 * `karma` to `5.2.3`
+* `remark-cli` to `9.0.0`,
+* `standard` to `15.0.1`,
+* `ws` to `7.3.1`
 
 # project.clj 4.2.0
 
