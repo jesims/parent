@@ -1,14 +1,14 @@
 {
   "name": "@io.jesi/parent",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "dependencyManagement": {
-    "karma": "^5.0.2",
-    "remark-cli": "^8.0.0",
+    "karma": "^5.2.3",
+    "remark-cli": "^9.0.0",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cljs-test": "^0.1.0",
-    "standard": "^14.3.3",
+    "standard": "^15.0.1",
     "source-map-support": "^0.5.19",
-    "ws": "^7.2.5"
+    "ws": "^7.3.1"
   },
   "description": "JESI parent package definitions",
   "homepage": "https://github.com/jesims/parent#readme",
