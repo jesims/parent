@@ -1,3 +1,9 @@
+# package-dry.json 0.2.0
+
+Update
+
+* `karma` to `5.2.3`
+
 # project.clj 4.2.0
 
 Update
