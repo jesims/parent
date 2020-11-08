@@ -1,3 +1,9 @@
+# project.clj 4.3.0
+
+Update
+
+* `io.jesi/backpack` to `6.2.0`
+
 # package-dry.json 0.2.0
 
 Update
