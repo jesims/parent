@@ -1,3 +1,9 @@
+# project.clj 4.5.0
+
+Update
+
+* `io.jesi/customs` to `1.3.1`
+
 # project.clj 4.4.0
 
 Update

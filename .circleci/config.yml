@@ -22,14 +22,12 @@ jobs:
   deploy:
     <<: *default
     steps:
-      - *cancel
       - checkout
       - *sub
       - run: './parent.sh deploy'
   publish:
     <<: *default
     steps:
-      - *cancel
       - checkout
       - *sub
       - run: './parent.sh publish'
