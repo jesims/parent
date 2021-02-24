@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.5.0"
+(defproject io.jesi/parent "4.6.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -6,20 +6,20 @@
             :distribution :repo
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
-  :managed-dependencies [[org.clojure/clojure "1.10.1"]
-                         [thheller/shadow-cljs "2.8.109"]
-                         [io.jesi/backpack "6.3.0"]
+  :managed-dependencies [[org.clojure/clojure "1.10.2"]
+                         [thheller/shadow-cljs "2.11.18"]
+                         [io.jesi/backpack "6.3.1"]
                          [io.jesi/customs "1.3.1"]
                          [com.rpl/specter "1.1.3"]
-                         [org.clojure/core.async "1.1.587"]
+                         [org.clojure/core.async "1.3.610"]
                          ;DB
-                         [org.clojure/java.jdbc "0.7.11"]
+                         [org.clojure/java.jdbc "0.7.12"]
                          [org.postgresql/postgresql "42.2.10"] ;TODO update to latest (42.2.12)
                          [clj-postgresql "0.7.0"]
                          [nilenso/honeysql-postgres "0.2.6"]
                          ;Match versions used in shadow-cljs https://github.com/thheller/shadow-cljs/blob/master/project.clj
-                         [org.clojure/clojurescript "1.10.741"]
-                         [com.google.javascript/closure-compiler-unshaded "v20200406"]
+                         [org.clojure/clojurescript "1.10.773"]
+                         [com.google.javascript/closure-compiler-unshaded "v20200830"]
                          [org.clojure/google-closure-library "0.0-20191016-6ae1f72f"]
                          [org.clojure/google-closure-library-third-party "0.0-20191016-6ae1f72f"]]
   :dependencies [[org.clojure/clojure :scope "provided"]]
@@ -34,7 +34,7 @@
                           :eastwood     {:exclude-linters [:local-shadows-var]}
                           ;TODO split CLJ and CLJS dependencies to separate profiles
                           :dependencies [[clj-kondo "RELEASE"]
-                                         [lambdaisland/kaocha "1.0-612"]
+                                         [lambdaisland/kaocha "1.0.732"]
                                          [thheller/shadow-cljs]
                                          [lambdaisland/kaocha-cljs "0.0-71"]]}}
   :global-vars {*warn-on-reflection* true}

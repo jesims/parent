@@ -1,3 +1,16 @@
+# project.clj 4.6.0
+
+Update
+
+* com.google.javascript/closure-compiler-unshaded to `v20210202`
+* io.jesi/backpack to `6.3.1`
+* lambdaisland/kaocha to `1.0.732`
+* org.clojure/clojure to `1.10.2`
+* org.clojure/clojurescript to `1.10.773`
+* org.clojure/core.async to `1.3.610`
+* org.clojure/java.jdbc to `0.7.12`
+* thheller/shadow-cljs to `2.11.18`
+
 # project.clj 4.5.0
 
 Update
