@@ -1,3 +1,19 @@
+# project.clj 4.7.0 and package-dry.json 0.3.0
+
+* Updated bindle submodule
+* Updated Dependencies:
+  * `project.clj`
+    * io.jesi/backpack to `7.0.0`
+    * jonase/eastwood to `0.3.14`
+    * lein-ancient to `0.7.0`
+    * org.clojure/clojugre to `1.10.3`
+    * thheller/shadow-cljs to `2.11.21`
+  * `package-dry.json`
+    * karma to `6.1.1`
+    * remark-cli to `9.0.0`,
+    * standard to `16.0.3`,
+    * ws to `7.4.4`
+
 # project.clj 4.6.0
 
 Update
