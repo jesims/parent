@@ -1,4 +1,4 @@
-# project.clj 4.6.1 and package-dry.json 0.2.1
+# project.clj 4.7.0 and package-dry.json 0.3.0
 
 * Updated bindle submodule
 * Updated Dependencies:
