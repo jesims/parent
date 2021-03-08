@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.6.0"
+(defproject io.jesi/parent "4.6.1"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -6,9 +6,9 @@
             :distribution :repo
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
-  :managed-dependencies [[org.clojure/clojure "1.10.2"]
-                         [thheller/shadow-cljs "2.11.18"]
-                         [io.jesi/backpack "6.3.1"]
+  :managed-dependencies [[org.clojure/clojure "1.10.3"]
+                         [thheller/shadow-cljs "2.11.21"]
+                         [io.jesi/backpack "7.0.0"]
                          [io.jesi/customs "1.3.1"]
                          [com.rpl/specter "1.1.3"]
                          [org.clojure/core.async "1.3.610"]
@@ -24,8 +24,8 @@
                          [org.clojure/google-closure-library-third-party "0.0-20191016-6ae1f72f"]]
   :dependencies [[org.clojure/clojure :scope "provided"]]
   :plugins [[lein-pprint "1.3.2"]
-            [lein-ancient "0.6.15"]]
-  :profiles {:parent/dev {:plugins      [[jonase/eastwood "0.3.11"]
+            [lein-ancient "0.7.0"]]
+  :profiles {:parent/dev {:plugins      [[jonase/eastwood "0.3.14"]
                                          [lein-auto "0.1.3"]
                                          [lein-codox "0.10.7"]
                                          [lein-kibit "0.1.8"]
