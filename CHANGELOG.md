@@ -1,3 +1,9 @@
+# project.clj 4.8.0
+
+Update
+
+* `lambdaisland/kaocha` to `1.0.829`
+
 # project.clj 4.7.0 and package-dry.json 0.3.0
 
 * Updated bindle submodule
