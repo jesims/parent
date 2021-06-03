@@ -1,3 +1,21 @@
+# project.clj 4.10.0 and package-dry.json 1.0.0
+
+* Updated bindle submodule
+* `project.clj`
+  * thheller/shadow-cljs to `2.14.2`
+  * org.clojure/core.async to `1.3.618`
+  * nilenso/honeysql-postgres to `0.4.112`
+  * org.clojure/clojurescript to `1.10.866`
+  * com.google.javascript/closure-compiler-unshaded to `v20210505`
+  * org.clojure/google-closure-library to `0.0-20201211-3e6c510d`
+  * org.clojure/google-closure-library-third-party to `0.0-20201211-3e6c510d`
+  * lambdaisland/kaocha to `1.0.861`
+
+Removed
+
+* `package-dry.json`
+  * removed `remark-cli` as build scripts install it as required
+
 # project.clj 4.9.0
 
 Update

@@ -1,9 +1,8 @@
 {
   "name": "@io.jesi/parent",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "dependencyManagement": {
     "karma": "^6.1.1",
-    "remark-cli": "^9.0.0",
     "karma-chrome-launcher": "^3.1.0",
     "karma-cljs-test": "^0.1.0",
     "standard": "^16.0.3",
@@ -25,7 +24,6 @@
     "karma": "managed",
     "karma-chrome-launcher": "managed",
     "karma-cljs-test": "managed",
-    "remark-cli": "managed",
     "source-map-support": "managed",
     "standard": "managed",
     "ws": "managed"
