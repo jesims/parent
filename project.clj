@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.9.0"
+(defproject io.jesi/parent "4.10.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -7,21 +7,21 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
   :managed-dependencies [[org.clojure/clojure "1.10.3"]
-                         [thheller/shadow-cljs "2.11.21"]
+                         [thheller/shadow-cljs "2.14.2"]
                          [io.jesi/backpack "7.1.0"]
                          [io.jesi/customs "1.3.1"]
                          [com.rpl/specter "1.1.3"]
-                         [org.clojure/core.async "1.3.610"]
+                         [org.clojure/core.async "1.3.618"]
                          ;DB
                          [org.clojure/java.jdbc "0.7.12"]
                          [org.postgresql/postgresql "42.2.10"] ;TODO update to latest (42.2.12)
                          [clj-postgresql "0.7.0"]
-                         [nilenso/honeysql-postgres "0.2.6"]
+                         [nilenso/honeysql-postgres "0.4.112"]
                          ;Match versions used in shadow-cljs https://github.com/thheller/shadow-cljs/blob/master/project.clj
-                         [org.clojure/clojurescript "1.10.773"]
-                         [com.google.javascript/closure-compiler-unshaded "v20200830"]
-                         [org.clojure/google-closure-library "0.0-20191016-6ae1f72f"]
-                         [org.clojure/google-closure-library-third-party "0.0-20191016-6ae1f72f"]]
+                         [org.clojure/clojurescript "1.10.866"]
+                         [com.google.javascript/closure-compiler-unshaded "v20210505"]
+                         [org.clojure/google-closure-library "0.0-20201211-3e6c510d"]
+                         [org.clojure/google-closure-library-third-party "0.0-20201211-3e6c510d"]]
   :dependencies [[org.clojure/clojure :scope "provided"]]
   :plugins [[lein-pprint "1.3.2"]
             [lein-ancient "0.7.0"]]
@@ -34,7 +34,7 @@
                           :eastwood     {:exclude-linters [:local-shadows-var]}
                           ;TODO split CLJ and CLJS dependencies to separate profiles
                           :dependencies [[clj-kondo "RELEASE"]
-                                         [lambdaisland/kaocha "1.0.829"]
+                                         [lambdaisland/kaocha "1.0.861"]
                                          [thheller/shadow-cljs]
                                          [lambdaisland/kaocha-cljs "0.0-71"]]}}
   :global-vars {*warn-on-reflection* true}
