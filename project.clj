@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.10.0"
+(defproject io.jesi/parent "4.11.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -25,18 +25,20 @@
   :dependencies [[org.clojure/clojure :scope "provided"]]
   :plugins [[lein-pprint "1.3.2"]
             [lein-ancient "0.7.0"]]
-  :profiles {:parent/dev {:plugins      [[jonase/eastwood "0.3.14"]
-                                         [lein-auto "0.1.3"]
-                                         [lein-codox "0.10.7"]
-                                         [lein-kibit "0.1.8"]
-                                         [lein-nsorg "0.3.0"]
-                                         [lein-set-version "0.4.1"]]
-                          :eastwood     {:exclude-linters [:local-shadows-var]}
-                          ;TODO split CLJ and CLJS dependencies to separate profiles
-                          :dependencies [[clj-kondo "RELEASE"]
-                                         [lambdaisland/kaocha "1.0.861"]
-                                         [thheller/shadow-cljs]
-                                         [lambdaisland/kaocha-cljs "0.0-71"]]}}
+  :profiles {:parent/dev     {:plugins      [[jonase/eastwood "0.3.14"]
+                                             [lein-auto "0.1.3"]
+                                             [lein-codox "0.10.7"]
+                                             [lein-kibit "0.1.8"]
+                                             [lein-nsorg "0.3.0"]
+                                             [lein-set-version "0.4.1"]]
+                              :eastwood     {:exclude-linters [:local-shadows-var]}
+                              ;TODO split CLJ and CLJS dependencies to separate profiles
+                              :dependencies [[clj-kondo "RELEASE"]
+                                             [lambdaisland/kaocha "1.0.861"]
+                                             [thheller/shadow-cljs]
+                                             [lambdaisland/kaocha-cljs "0.0-71"]]}
+             :parent/uberjar {:global-vars {*assert* false}}
+             :check          {:source-paths ["src" "test"]}}
   :global-vars {*warn-on-reflection* true}
   :deploy-repositories [["clojars" {:url           "https://clojars.org/repo"
                                     :username      :env/clojars_username
@@ -58,4 +60,5 @@
             "test"            ["kaocha"]
             "tests"           ["kaocha" "--focus"]
             "test-refresh"    ["kaocha" "--watch"]
-            "docs"            ["codox"]})
+            "docs"            ["codox"]
+            "check-all"       ["with-profile" "dev,check" "check"]})
