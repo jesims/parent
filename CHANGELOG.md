@@ -2,7 +2,7 @@
 
 Added:
 
-* `:parent/uberjar` and `check` profiles
+* `:parent/uberjar` and `:check` profiles
 * `check-all` alias
 
 # project.clj 4.10.0 and package-dry.json 1.0.0
