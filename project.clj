@@ -37,7 +37,7 @@
                                              [lambdaisland/kaocha "1.0.861"]
                                              [thheller/shadow-cljs]
                                              [com.lambdaisland/glogi "1.0.116"]
-                                             [lambdaisland/kaocha-cljs "1.0.93"]]}
+                                             [com.lambdaisland/kaocha-cljs "1.0.93"]]}
              :parent/uberjar {:global-vars {*assert* false}}
              :check          {:source-paths ["src" "test"]}}
   :global-vars {*warn-on-reflection* true}

@@ -4,7 +4,7 @@ Updated:
 
 * `project.clj`
   * `com.lambdaisland/glogi` to `1.0.116`
-  * `lambdaisland/kaocha-cljs` to `1.0.93`
+  * `com.lambdaisland/kaocha-cljs` to `1.0.93`
 
 # project.clj 4.11.0
 
