@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.11.0"
+(defproject io.jesi/parent "4.12.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -36,7 +36,8 @@
                               :dependencies [[clj-kondo "RELEASE"]
                                              [lambdaisland/kaocha "1.0.861"]
                                              [thheller/shadow-cljs]
-                                             [lambdaisland/kaocha-cljs "0.0-71"]]}
+                                             [com.lambdaisland/glogi "1.0.116"]
+                                             [lambdaisland/kaocha-cljs "1.0.93"]]}
              :parent/uberjar {:global-vars {*assert* false}}
              :check          {:source-paths ["src" "test"]}}
   :global-vars {*warn-on-reflection* true}
