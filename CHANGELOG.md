@@ -1,3 +1,10 @@
+# project.clj 4.13.0
+
+Updated:
+
+* `project.clj`
+  * `io.jesi/customs` to `1.3.2`
+
 # project.clj 4.12.0
 
 Updated:
