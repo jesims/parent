@@ -1,5 +1,6 @@
 .idea/azure/
 .idea/codestream.xml
+.idea/dataSources*
 /.clj-kondo/
 /.idea/dictionaries/
 /.idea/libraries/
