@@ -1,3 +1,9 @@
+# project.clj 4.14.0
+
+Added:
+
+* `com.google.guava/guava` `30.1.1-jre` managed dependency
+
 # project.clj 4.13.0
 
 Updated:

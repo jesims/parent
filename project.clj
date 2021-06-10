@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.13.0"
+(defproject io.jesi/parent "4.14.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -21,7 +21,9 @@
                          [org.clojure/clojurescript "1.10.866"]
                          [com.google.javascript/closure-compiler-unshaded "v20210505"]
                          [org.clojure/google-closure-library "0.0-20201211-3e6c510d"]
-                         [org.clojure/google-closure-library-third-party "0.0-20201211-3e6c510d"]]
+                         [org.clojure/google-closure-library-third-party "0.0-20201211-3e6c510d"]
+                         ;Fixes CLJS compiler issues
+                         [com.google.guava/guava "30.1.1-jre"]]
   :dependencies [[org.clojure/clojure :scope "provided"]]
   :plugins [[lein-pprint "1.3.2"]
             [lein-ancient "0.7.0"]]
