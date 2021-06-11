@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.14.0"
+(defproject io.jesi/parent "4.15.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
