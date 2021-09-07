@@ -1,3 +1,10 @@
+# project.clj 4.16.0
+
+Updated:
+
+* `project.clj`
+  * `io.jesi/backpack` to `7.2.1`
+
 # project.clj 4.15.0
 
 Updated:
