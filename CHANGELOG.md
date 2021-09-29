@@ -1,3 +1,11 @@
+# project.clj 4.17.0
+
+Updated:
+
+* Updated bindle submodule
+* `project.clj`
+  * `io.jesi/customs` to `1.3.3`
+
 # project.clj 4.16.0
 
 Updated:
