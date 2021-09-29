@@ -2,6 +2,7 @@
 
 Updated:
 
+* Updated bindle submodule
 * `project.clj`
   * `io.jesi/customs` to `1.3.3`
 
