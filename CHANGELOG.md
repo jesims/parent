@@ -1,3 +1,15 @@
+# project.clj 4.18.0
+
+Updated:
+
+* Updated bindle submodule
+* `project.clj`
+  * `jonase/eastwood` to `0.9.9`
+  * `lambdaisland/kaocha` to `1.0.861`
+  * `com.lambdaisland/glogi` to `1.0.116`
+  * `com.lambdaisland/kaocha-cljs` to `1.0.93`
+  * `thheller/shadow-cljs` to `2.14.6`
+
 # project.clj 4.17.0
 
 Updated:
