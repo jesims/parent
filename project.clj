@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.17.0"
+(defproject io.jesi/parent "4.18.0"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -7,7 +7,7 @@
             :comments     "same as Clojure"}
   :min-lein-version "2.9.1"
   :managed-dependencies [[org.clojure/clojure "1.10.3"]
-                         [thheller/shadow-cljs "2.14.2"]
+                         [thheller/shadow-cljs "2.14.6"]
                          [io.jesi/backpack "7.2.1"]
                          [io.jesi/customs "1.3.3"]
                          [com.rpl/specter "1.1.3"]
@@ -27,7 +27,7 @@
   :dependencies [[org.clojure/clojure :scope "provided"]]
   :plugins [[lein-pprint "1.3.2"]
             [lein-ancient "0.7.0"]]
-  :profiles {:parent/dev     {:plugins      [[jonase/eastwood "0.3.14"]
+  :profiles {:parent/dev     {:plugins      [[jonase/eastwood "0.9.9"]
                                              [lein-auto "0.1.3"]
                                              [lein-codox "0.10.7"]
                                              [lein-kibit "0.1.8"]
@@ -36,10 +36,10 @@
                               :eastwood     {:exclude-linters [:local-shadows-var]}
                               ;TODO split CLJ and CLJS dependencies to separate profiles
                               :dependencies [[clj-kondo "RELEASE"]
-                                             [lambdaisland/kaocha "1.0.861"]
+                                             [lambdaisland/kaocha "1.0.902"]
                                              [thheller/shadow-cljs]
-                                             [com.lambdaisland/glogi "1.0.116"]
-                                             [com.lambdaisland/kaocha-cljs "1.0.93"]]}
+                                             [com.lambdaisland/glogi "1.0.136"]
+                                             [com.lambdaisland/kaocha-cljs "1.0.113"]]}
              :parent/uberjar {:global-vars {*assert* false}}
              :check          {:source-paths ["src" "test"]}}
   :global-vars {*warn-on-reflection* true}
