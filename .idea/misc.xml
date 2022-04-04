@@ -5,8 +5,15 @@
   </component>
   <component name="LeiningenProjectsManager">
     <option name="projectFiles">
-      <list>
+      <set>
         <option value="file://$PROJECT_DIR$/project.clj" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
