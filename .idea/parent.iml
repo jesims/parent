@@ -2,7 +2,7 @@
 <module cursive.leiningen.project.LeiningenProjectsManager.displayName="io.jesi/parent:4.19.0" cursive.leiningen.project.LeiningenProjectsManager.isLeinModule="true" type="JAVA_MODULE" version="4">
   <component name="BuildSystem">
     <option name="buildSystemId" value="LEININGEN" />
-    <option name="displayName" value="io.jesi/parent:4.19.0" />
+    <option name="displayName" value="io.jesi/parent:4.20.0" />
   </component>
   <component name="NewModuleRootManager">
     <output url="file://$MODULE_DIR$/target/classes" />
