@@ -8,7 +8,7 @@
   :min-lein-version "2.9.1"
   :managed-dependencies [[org.clojure/clojure "1.10.3"]
                          [thheller/shadow-cljs "2.14.6"]
-                         [io.jesi/backpack "7.4.0-SNAPSHOT"]
+                         [io.jesi/backpack "7.4.0"]
                          [io.jesi/customs "1.3.3"]
                          [com.rpl/specter "1.1.3"]
                          [org.clojure/core.async "1.3.618"]
