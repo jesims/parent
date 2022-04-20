@@ -18,4 +18,9 @@
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="jdk" project-jdk-type="JavaSDK" />
+  <component name="SwUserDefinedSpecifications">
+    <option name="specTypeByUrl">
+      <map />
+    </option>
+  </component>
 </project>
