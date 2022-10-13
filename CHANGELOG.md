@@ -1,3 +1,11 @@
+# project.clj 4.22.0
+
+Updated:
+
+* `project.clj`
+  * `lambdaisland/kaocha` to `1.70.1086`
+  * `com.lambdaisland/kaocha-cljs` to `1.4.130`
+
 # project.clj 4.21.0
 
 Updated:
