@@ -1,4 +1,4 @@
-(defproject io.jesi/parent "4.23.0"
+(defproject io.jesi/parent "4.23.1"
   :description "Clojure and NPM parent package definitions"
   :url "https://github.com/jesims/parent#readme"
   :license {:name         "Eclipse Public License - v 1.0"
@@ -35,7 +35,8 @@
                                              [lein-set-version "0.4.1"]]
                               :eastwood     {:exclude-linters [:local-shadows-var]}
                               ;TODO split CLJ and CLJS dependencies to separate profiles
-                              :dependencies [[clj-kondo "RELEASE"]
+                              :dependencies [[clj-kondo "2023.03.17"]
+                                             [borkdude/edamame "1.3.20"]
                                              [lambdaisland/kaocha "1.70.1086"]
                                              [thheller/shadow-cljs]
                                              [com.lambdaisland/glogi "1.0.136"]
