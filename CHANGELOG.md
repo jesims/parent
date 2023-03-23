@@ -1,3 +1,9 @@
+# project.clj 4.23.1
+
+Fixed:
+
+* `clj-kondo` dependency
+
 # project.clj 4.23.0
 
 Updated:
